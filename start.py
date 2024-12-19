@@ -46,12 +46,38 @@
 
 
 
-def my_name(name):
-    print("Hello my dear " + name)
+# def my_name(name):
+#     print("Hello my dear " + name)
+#
+# my_name("Daniil")
+#
+#
+# my_list = [1, 2, 3, 4, 5]
+#
+# print(my_list)
 
-my_name("Daniil")
+
+# function
+
+# def hello(name):
+#     print("Hello,", name)
+#     print("Hello world!")
+#     print("Hello again!")
+#
+# # print("Hello there from outside of function!")
+#
+# hello('Daniel')
 
 
-my_list = [1, 2, 3, 4, 5]
+# def sum_nums(a, b):
+#     sum = a + b
+#     return sum
+#
+# first_sum = sum_nums(76, 7)
+# print(first_sum) # 83
+#
+# print(sum_nums(1, 2)) # 3
+#
+# print(sum_nums(sum_nums(54,23),301)) # 77 + 379, добавляю в функцию ту же функцию с другим числом,таким образом
+# # прибавляя её
 
-print(my_list)
