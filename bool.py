@@ -43,3 +43,19 @@ print('long string' > 'long') # True - сравнение строк. посим
 
 print( [1, 2, 3] == [1, 2, 3]) # True - сравнение списков
 
+
+# ================================================================
+
+# конвертация в логическое значение с помощью bool()
+
+print("\n") # пустая строка для удобства чтения
+
+db_is_available = True
+
+print(db_is_available) # True
+
+db_is_available = False
+print(db_is_available)
+
+print(type(db_is_available)) # <class 'bool'> - тип данных
+
