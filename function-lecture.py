@@ -102,7 +102,7 @@
 # print_name(15)  #TypeError: 'int' object is not callable
 
 # my_number = 10
-# print(id(my_number))  # 140717920881368 id/адресс  в памяти моего компьютера
+# print(id(my_number))  # 140717920881368 id/адрес  в памяти моего компьютера
 #
 # my_string = 'abc'
 # print(id(my_string)) #140717919794272 айди всегда будет новым если я буду его перезаписывать
