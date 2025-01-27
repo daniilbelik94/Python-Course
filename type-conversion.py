@@ -64,4 +64,4 @@ print(float_num.__rmul__(int_num)) # 375.0
 print(bool) # <class 'bool'> - тип данных
 print(bool(10)) # True
 print(dir(bool)) # список методов класса bool
-print(bool.__doc__) # bool(x) -> bool - возвращает True или False
+print(bool.__doc__) # bool(x) -> bool - возвращает True или False в зависимости от значения x
