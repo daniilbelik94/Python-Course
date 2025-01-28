@@ -301,5 +301,106 @@ print(result)
 
 
 
+# У тебя есть список продуктов с их ценами и количествами. Напиши функцию, которая будет принимать три списка:
+#
+# products — список с названиями продуктов.
+# prices — список с ценами продуктов.
+# quantities — список с количеством каждого продукта на складе.
+# Твоя задача:
+#
+# Посчитать стоимость каждого продукта на складе (цена * количество).
+# Если общая стоимость продукта на складе превышает определённую сумму (например, 10), этот продукт должен
+# попасть в итоговый результат.
+# Итоговый результат должен быть словарем, где ключом является название продукта, а значением — словарь,
+# содержащий цену, количество и общую стоимость.
+
+# Пример:
+# Входные данные:
+
+def totalPrice(products,prices,quantities):
+    result = {}
+    for product,price, quantity in zip(products,prices,quantities):
+        if price * quantity >= 10:
+            result[product] = {'quantity': quantity, 'total_cost': price * quantity}
+    return result
+
+products = ["Apple", "Banana", "Carrot", "Milk", "Cheese"]
+prices = [2.0, 1.5, 0.8, 3.0, 5.0]
+quantities = [5, 10, 8, 3, 2]
 
 
+result = totalPrice(products,prices,quantities)
+print(result)
+
+# Выход:
+# {
+#     "Apple": {"price": 2.0, "quantity": 5, "total_cost": 10.0},
+#     "Banana": {"price": 1.5, "quantity": 10, "total_cost": 15.0},
+#     "Cheese": {"price": 5.0, "quantity": 2, "total_cost": 10.0}
+# }
+# Подсказки:
+# Используй цикл zip для объединения продуктов, цен и количеств.
+# Рассчитай общую стоимость как price * quantity.
+# Применяй условие для фильтрации продуктов, где общая стоимость больше 10.
+
+
+
+
+
+# Хорошо, вот задача чуть сложнее, которая потребует работы с фильтрацией и дополнительными операциями:
+#
+# Задача:
+# Ты получаешь список продуктов с их ценами, количеством и категориями. Напиши функцию, которая будет
+# принимать эти три списка:
+#
+# products — список с названиями продуктов.
+# prices — список с ценами продуктов.
+# quantities — список с количеством каждого продукта на складе.
+# categories — список с категориями для каждого продукта.
+# Твоя задача:
+#
+# Посчитать стоимость каждого продукта на складе (цена * количество).
+# Если общая стоимость продукта на складе больше 20, этот продукт должен попасть в итоговый результат.
+# Итоговый результат должен быть разделен на две части:
+# Продукты, которые принадлежат категории "fruits" (фрукты).
+# Продукты, которые принадлежат категории "vegetables" (овощи).
+# Результат должен быть словарем, в котором два ключа: "fruits" и "vegetables". Значением для каждого ключа должен быть
+# список продуктов, где каждый продукт представлен как словарь с ключами: "name", "price", "quantity" и "total_cost".
+
+def totalPrice(products, prices, quantities, categories):
+    result = {'fruits': [], 'vegetables': []} # помимо пустого словаря я так же добавил списки
+    for product, price, quantity, categorie in zip(products, prices, quantities, categories):
+        total_cost = price * quantity # изначально сделал полную сумму из цены и клва
+        if total_cost >= 20: # определил что цена должна быть больше 20
+            if categorie == 'fruits': # сортировка по категориям
+                result['fruits'].append({
+                    'name': product,
+                    'price': price,
+                    'quantity': quantity,
+                    'total_cost': total_cost
+                })
+            elif categorie == "vegetables":
+                result['vegetables'].append({
+                    'name': product,
+                    'price': price,
+                    'quantity': quantity,
+                    'total_cost': total_cost
+                })
+    return result
+
+products = ["Apple", "Banana", "Carrot", "Milk", "Cheese"]
+prices = [2.0, 1.5, 0.8, 3.0, 5.0]
+quantities = [15, 10, 25, 3, 2]
+categories = ["fruits", "fruits", "vegetables", "dairy", "dairy"]
+
+result = totalPrice(products, prices, quantities, categories)
+print(result)
+# {
+#     "fruits": [
+#         {"name": "Apple", "price": 2.0, "quantity": 15, "total_cost": 30.0},
+#         {"name": "Banana", "price": 1.5, "quantity": 10, "total_cost": 15.0}
+#     ],
+#     "vegetables": [
+#         {"name": "Carrot", "price": 0.8, "quantity": 25, "total_cost": 20.0}
+#     ]
+# }
