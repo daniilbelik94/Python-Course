@@ -23,6 +23,12 @@ my_list[3] = 'television'
 
 print(my_list)
 
+print(('hello' == 'Hello') or (5 == 5) and (8 != 8))
+
+# != это оператор "не равно"
+
+
+
 
 
 

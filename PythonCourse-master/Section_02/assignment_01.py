@@ -51,4 +51,4 @@ print(my_list[0]['Bill'])
 
 
 # Solution
-# print(my_list[0].get('Bill'))
+print(my_list[0].get('Bill'))

@@ -13,6 +13,16 @@
 
 # your code below:
 
+def merge_list(list1,list2):
+    return list1 + list2
+
+
+list1 = ['a', 'bc', 2, True]
+list2 = [ 1.23, False, 'danil']
+
+print(merge_list(list1,list2))
+
+
 
 
 
@@ -54,8 +64,8 @@
 
 # solution Below:
 
-# def merge_lists(list_a, list_b):
-#     return list_a + list_b
-#
-# my_list = merge_lists([1,2,3],['a', 'b', 'c'])
-# print(my_list)
+def merge_lists(list_a, list_b):
+    return list_a + list_b
+
+my_list = merge_lists([1,2,3],['a', 'b', 'c'])
+print(my_list)
