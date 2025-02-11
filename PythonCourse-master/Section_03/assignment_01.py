@@ -3,6 +3,12 @@
     Create a function named merge_lists that accepts 2 lists.
     The function is supposed to merge both of those lists together
     and return the result.
+
+    перевод:
+    Создайте функцию с именем merge_lists, которая принимает 2 списка.
+    Функция должна объединить оба этих списка вместе
+    и вернуть результат.
+    
 """
 
 # your code below:

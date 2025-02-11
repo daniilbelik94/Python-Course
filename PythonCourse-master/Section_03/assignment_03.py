@@ -8,6 +8,17 @@ containing the original list argument as well as each of the words that are in
 the string argument in addition to each of the characters in the string
 argument as individual elements in the list.
 
+перевод:
+Создайте функцию с именем multi_merge, которая принимает список и строку
+в качестве аргументов.
+
+Функция должна вернуть объединенный список
+содержащий исходный аргумент списка, а также каждое из слов, которые есть в
+аргументе строки, в дополнение к каждому из символов в строке
+аргумент как отдельные элементы в списке.
+
+
+
 """
 # Your Code Below:
 

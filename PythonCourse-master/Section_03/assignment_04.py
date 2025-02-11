@@ -4,6 +4,10 @@
 Define a function called last_list that can accept an unlimited number
 of lists but returns only the last list.
 
+перевод:
+Определите функцию с именем last_list, которая может принимать неограниченное количество
+списков, но возвращает только последний список.
+
 Example:
 
     For example, the below function call should return ['mike', 'john']
