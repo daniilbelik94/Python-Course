@@ -92,7 +92,8 @@ users = [
     {
         'name': 'John',
         'age': 25,
-        'user-id': 1},
+        'user-id': 1
+    },
     {
         'name': 'Jane',
         'age': 22,
