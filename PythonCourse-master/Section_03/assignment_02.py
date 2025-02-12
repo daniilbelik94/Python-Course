@@ -15,15 +15,15 @@
 """
 # Your Code Below:
 
-def separate():
-    for item in list:
-        print(item)
-
-    return list
-
-list = ['a', 'afd', 'daniil', 1, 3 ]
-
-print(separate())
+# def separate():
+#     for item in list:
+#         print(item)
+#
+#     return list
+#
+# list = ['a', 'afd', 'daniil', 1, 3 ]
+#
+# print(separate())
 
 
 def separate(string):

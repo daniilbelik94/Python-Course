@@ -18,39 +18,21 @@ Example:
 
 # Your code below:
 
+def last_list(*args):
+    if args:
+        last_item = args[-1]
+        return last_item
+    return None
+
+last_item = last_list([1,2,3,4,5], ['a', 'b', 'c'], ['mike', 'john'])
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(last_item)
 
 
 
 
 # Solution:
 
-# def last_list(*args):
-#     return args[-1 :len(args)]
+def last_list(*args):
+    return args[-1 :len(args)]
