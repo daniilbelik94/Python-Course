@@ -27,7 +27,13 @@ def multi_merge(list_a, str):
 
 print(multi_merge([1,2,3,4], "Hello My name is imtiaz"))
 
+print(multi_merge("Hello My name is imtiaz",[1,2,3,4]))
 
+# [1, 2, 3, 4, 'Hello', 'My', 'name', 'is', 'imtiaz', 'H', 'e', 'l', 'l', 'o',
+# ' ', 'M', 'y', ' ', 'n', 'a', 'm', 'e', ' ', 'i', 's', ' ', 'i', 'm', 't', 'i', 'a', 'z']
+
+def multi_merge(stroke,list_a):
+        return list_a + stroke.split() + list(stroke)
 
 
 
@@ -69,7 +75,7 @@ print(multi_merge([1,2,3,4], "Hello My name is imtiaz"))
 
 # Solution:
 
-# def multi_merge(list_a, str):
-#     return list_a + str.split() + list(str)
-#
-# print(multi_merge([1,2,3,4], "Hello My name is imtiaz"))
+def multi_merge(list_a, str):
+    return list_a + str.split() + list(str)
+
+print(multi_merge([1,2,3,4], "Hello My name is imtiaz"))

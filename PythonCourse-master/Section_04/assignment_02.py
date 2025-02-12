@@ -33,8 +33,16 @@ print(pay_extra(True, 6))
 
 
 
+animal = 'cow'
 
-
+if animal == 'cow':
+    print('eats grass')
+elif animal == 'bird':
+    print('eats seeds')
+elif animal == 'monkey':
+    print('eats bananas')
+else:
+    print('we don`t know what the animal eats')
 
 
 

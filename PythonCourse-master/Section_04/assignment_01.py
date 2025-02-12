@@ -25,6 +25,18 @@ print(twelver(4, 9)) # Вызываем функцию и передаем ар�
 print(twelver(9, 3)) # Вызываем функцию и передаем аргументы
 
 
+elephant = 800
+hippo = 900
+
+if elephant < hippo:
+    print('the if statement evaluated to true') # дальше команда не работает так как первое выражение истинно
+    if 5 < 7:
+        print('5 > 7')
+
+else:
+    print('if statement evaluated to false')
+
+
 
 
 
